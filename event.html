@@ -470,6 +470,27 @@
 <script>
     var mixer = mixitup('.gallery');
 </script>
+<script>  const waScript = document.createElement('script');
+  waScript.async = true;
+  waScript.src = 'https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js';
+  document.body.appendChild(waScript);
+
+  waScript.onload = () => {
+      const wa_btnSetting = {
+          btnColor: '#16BE45',
+          ctaText: '',
+          cornerRadius: 40,
+          marginBottom: 20,
+          marginLeft: 20,
+          marginRight: 20,
+          btnPosition: 'right',
+          whatsAppNumber: '91 7043323232',
+          welcomeMessage: 'નમસ્તે ગાયત્રીગાંઠિયા નિકોલ',
+          zIndex: 999999,
+          btnColorScheme: 'light',
+      };
+      window._waEmbed(wa_btnSetting);
+  };</script>
 <script src="js/custom.js" ></script>
 
 
