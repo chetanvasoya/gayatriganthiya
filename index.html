@@ -374,6 +374,7 @@
     margin-right: 10px;
   }
   
+  /* For small screens (mobile) */
   @media (max-width: 768px) {
     .mobiles {
       flex-direction: column;
@@ -399,7 +400,43 @@
       margin-right: 0;
     }
   }
-    </style>
+  
+  /* For tablet screens (between 768px and 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .mobiles {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 30px;
+    }
+  
+    .mobile-images img {
+      width: 150px; /* Smaller mobile image for tablet */
+      height: auto;
+    }
+  
+    .description {
+      text-align: center;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+
+    .description h4 {
+      font-size: 30px;
+    }
+  
+    .description h2 {
+      font-size: 35px;
+    }
+  
+    .store-btn {
+      width: 120px; /* Smaller store buttons for tablet */
+      height: auto;
+      margin-right: 10px;
+    }
+  }
+      </style>
   
   
   
@@ -957,6 +994,7 @@
             <p class="mt-3 text-light"> The real test of kathiyawadi snacks that we serve since 43 years. That you only find in our all branches at Ahmedabad. </p>
           </div>
         </div>
+    
        
         <div class="col">
           <div class="comon-footer">
@@ -969,6 +1007,7 @@
             </ul>
           </div>
         </div>
+        
         <div class="col">
           <div class="comon-footer">
             <h5> Support </h5>
@@ -988,13 +1027,30 @@
                 <a href="https://www.instagram.com/gayatriganthiya/"> <i class="fab fa-instagram-square"></i> </a>
                 <a href="https://www.youtube.com/channel/UCUxCJRjTcsAolypG3lRK0pA"> <i class="fab fa-youtube"></i> </a>
                 <a href="https://www.google.com/search?q=gayatri+ganthiya+nikol&oq=gayatri+gfanthiya+&aqs=edge.1.69i57j0i13i512j0i13i30j0i390i650l5j69i64.5593j0j4&sourceid=chrome&ie=UTF-8#rlimm=15286177647619272042"> <i class="fab fa-google-plus-g"></i> </a>
-                <a href="https://play.google.com/store/apps/details?id=delivery.fab.gayatrigathiya.android&pcampaignid=web_share"> <i class="fab fa-google-play"></i> </a>
-                <a href="https://apps.apple.com/in/app/gayatri-ganthiya/id6569216799"> <i class="fab fa-apple"></i> </a>
+                <!-- <a href="https://play.google.com/store/apps/details?id=delivery.fab.gayatrigathiya.android&pcampaignid=web_share"> <i class="fab fa-google-play"></i> </a>
+                <a href="https://apps.apple.com/in/app/gayatri-ganthiya/id6569216799"> <i class="fab fa-apple"></i> </a> -->
             </li>
             
 
              
             </ul>
+            <div class="mini">
+              <a href="https://apps.apple.com/in/app/gayatri-ganthiya/id6569216799" target="_blank">
+                  <img src="./images/icones/mini play.png" alt="Play Store">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=delivery.fab.gayatrigathiya.android&pcampaignid=web_share" target="_blank">
+                  <img src="./images/icones/mini and.png" alt="Android">
+              </a>
+          </div>
+          <style>
+            .mini {
+              display: flex;
+            }
+            .mini img{
+              height: 50px;
+            }
+          </style>
+          
           </div>
         </div>
      </div>
